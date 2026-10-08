@@ -1,0 +1,23 @@
+# CASFETA Zanzibar Digital Management & Ministry Platform (CZDMP)
+# Backend dependencies (SRS sections 56, 82).
+# Install with:  python -m venv venv && venv\Scripts\activate && pip install -r requirements.txt
+
+Django>=5.0,<5.3
+djangorestframework>=3.14
+djangorestframework-simplejwt>=5.3
+django-cors-headers>=4.3
+django-filter>=23.5
+Pillow>=10.1
+qrcode>=8.0
+python-decouple>=3.8
+python-dotenv>=1.0
+whitenoise>=6.6
+
+# PDF generation for membership cards / certificates (optional)
+reportlab>=4.0
+
+# Production database driver for MySQL (SRS section 82)
+# mysqlclient>=2.2      # preferred
+# PyMySQL>=1.1          # pure python alternative, enable with:
+#                       # import pymysql; pymysql.install_as_MySQLdb()
+# psycopg2-binary>=2.9  # PostgreSQL alternative
